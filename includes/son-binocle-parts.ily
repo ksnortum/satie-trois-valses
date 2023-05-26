@@ -6,6 +6,7 @@
 % --- Changes from the score ---
 % ------------------------------
 
+% Bar 1: s'il vous plaît s/b š'il vous plaît
 % Bar 31: rallentir s/b ralentir
 
 % ----------------
@@ -43,13 +44,13 @@ shapeTwo = \shapeTieColumn #' (
 % --- Text
 nettoie = \markup { \upright "Il le nettoie tous les jours." }
 binocole = \markup { \upright "C'est un binocle d'argent avec des verres en or fumé." }
-dame = \markup { \upright "Il lui été donné par une belle Dame" }
+dame = \markup { \upright "Il lui été donné par une belle Dame." }
 beaux = \markup { \upright "Se sont de beaux souvenirs! Mais...:" }
 ami = \markup { \upright "Une grande tristesse règne sur notre ami:" }
 etui = \markup { \upright "Il a perdu l'étui de ce binocle!" }
 
 % --- Musical terms
-lent = \markup { \bold "Très lent, s'il vous plait" }
+lent = \markup { \bold "Très lent, š'il vous plaît" }
 pliez = "pliez doucement"
 changez = "Ne changez pas de physionomie"
 pale = "devenez pâle"
@@ -280,44 +281,3 @@ midiSonBinocle = \book {
     }
   }
 }
-
-% --------------------
-% --- Translations ---
-% --------------------
-
-%{
-\markup {
-  \column {
-    \line { Translations by \with-url "http://translate.google.com" { "Google Translate" } and some research }
-    \line { \null }
-    \line { Title: }
-    \line { \hspace #2 \bold { Les Trois Valses Distinguées du Précieux Dégoûté } - Three Distinguished Waltzes of a Precious Fop }
-    \line { \null }
-    \line { Subtitle: }
-    \line { \hspace #2 \bold { Son Binocle } - His Spectacles }
-    \line { \null }
-    \line { Preamble: }
-    \line { \hspace #2 Our old mores forbade a young man  }
-    \line { \hspace #2 to appear naked in the bath, and modesty }
-    \line { \hspace #2 thus cast deep roots in the souls. }
-    \line { \hspace #2 (Cicero: "The Republic" Victor POUPIN translation). }
-    \line { \null }
-    \line { Text: }
-    \line { \hspace #2 \bold \nettoie - He cleans it every day. }
-    \line { \hspace #2 \bold \binocole - It is silver spectacles with gold smoked lenses. }
-    \line { \hspace #2 \bold \dame - It was given to him by a beautiful lady. }
-    \line { \hspace #2 \bold \beaux - Such beautiful memories!  But...: }
-    \line { \hspace #2 \bold \ami - A great sadness reigns over our friend: }
-    \line { \hspace #2 \bold \etui - He has lost his spectacle case! }
-    \line { \null }
-    \line { Musical Terms: }
-    \line { \hspace #2 \bold \lent - Very slow, please }
-    \line { \hspace #2 \bold \pliez - gently fold }
-    \line { \hspace #2 \bold \changez - Do not change your face }
-    \line { \hspace #2 \bold \pale - become pale }
-    \line { \hspace #2 \bold \creux - in the pit of the stomach. }
-    \line { \hspace #2 \bold \ral - slow down and get softer }
-    \line { \hspace #2 \bold \mg - left hand }
-  }
-}
-%}

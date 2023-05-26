@@ -57,7 +57,7 @@ shapeTwo = { \shape #'((0 . 0.5) (0 . 0.75) (0 . 0.75) (0 . 0.5)) Tie }
 % --- Text
 regarde = "(il se regarde)" 
 fredonne = \markup { \concat {
-  \upright { "Il fredonne un air du XV" \super \underline e " siècle." }
+  \upright { "Il fredonne un air du XV" \super e " siècle." }
 } }
 puis = \markup { \upright "Puis, il s'adresse un compliment tout rempli de mesure." }
 osera = \markup { \upright "Qui osera dire qu'il n'est pas le plus beau?" }
@@ -420,53 +420,3 @@ midiSaTaille = \book {
     }
   }
 }
-
-% --------------------
-% --- Translations ---
-% --------------------
-
-%{
-\markup {
-  \column {
-    \line { Translations by \with-url "http://translate.google.com" { "Google Translate" } and some research }
-    \line { \null }
-    \line { Title: }
-    \line { \hspace #2 \bold { Les Trois Valses Distinguées du Précieux Dégoûté } - Three Distinguished Waltzes of a Precious Fop }
-    \line { \null }
-    \line { Subtitle: }
-    \line { \hspace #2 \bold { Sa Taille } - His Waist }
-    \line { \null }
-    \line { Preamble: }
-    \line { \hspace #2 Those who harm the reputation or fortune of others, rather than restraining a clever remark, deserve }
-    \line { \hspace #2 an infamous punishment. This has not been said, and I dare to say. (The BRUYERE "The Characters" }
-    \line { \hspace #2 or The Mores of This Century, according to the edition of Messrs. C. SERVOIS and A. REBELLIAU) }
-    \line { \null }
-    \line { Text: }
-    \line { \hspace #2 \bold \regarde - he looks at himself }
-    \line { \hspace #2 \bold \fredonne - He hums a tune from the fifteenth century. }
-    \line { \hspace #2 \bold \puis }
-    \line { \hspace #4 Then he addresses himself with a restrained compliment. }
-    \line { \hspace #2 \bold \osera - Who shall say that he is not the best? }
-    \line { \hspace #2 \bold \coeur - Is not his heart soft? }
-    \line { \hspace #2 \bold \prend - He takes himself by the waist. }
-    \line { \hspace #2 \bold \raviss - He is delighted. }
-    \line { \hspace #2 \bold \jolie - What will the pretty Marquise say? }
-    \line { \hspace #2 \bold \elle - She will struggle but be defeated. }
-    \line { \hspace #2 \bold \ecrit - Is it not written? }
-    \line { \null }
-    \line { Musical Terms: }
-    \line { \hspace #2 \bold \pasVite - Not fast }
-    \line { \hspace #2 \bold \chante - sung }
-    \line { \hspace #2 \bold \attendez - Wait }
-    \line { \hspace #2 \bold \plusLent - Slower }
-    \line { \hspace #2 \bold \reprendre - resume (a tempo) }
-    \line { \hspace #2 \bold \rallUnPeu - slow down a bit }
-    \line { \hspace #2 \bold \percez - Break through }
-    \line { \hspace #2 \bold { Restez (un rien) } - Stay (a bit) }
-    \line { \hspace #2 \bold \plusVif - brighter }
-    \line { \hspace #2 \bold \droit - straight ahead }
-    \line { \hspace #2 \bold \gommeux - gummy }
-    \line { \hspace #2 \bold \sec - dry }
-  }
-}
-%}
