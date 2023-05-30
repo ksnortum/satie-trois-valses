@@ -15,6 +15,8 @@ This should produce a PDF and three MIDI files.
 
 The PDF produced will have point-and-click info in it, which you may not want (it makes the file size much bigger).  To avoid this use the `-dno-point-and-click` command line option.  This is explained in detail [here](https://lilypond.org/doc/v2.24/Documentation/usage/command_002dline-usage).
 
+There are also three LilyPond files to create the movements separately: sa-taille.ly, son-binocle.ly, and ses-jambes.ly.
+
 ## Deviations from the source
 I have made a few editorial decisions about the source score.  These are documented in the `include/<movement>-parts.ily` files.  These changes seemed either obvious or reasonable to me as discussed in the `include` files.
 
