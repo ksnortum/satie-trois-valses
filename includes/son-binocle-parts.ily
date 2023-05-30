@@ -63,6 +63,8 @@ mg = "m.g."
 % -------------
 
 highVoice = \relative {
+  \set Score.tempoHideNote = ##t
+  \tempo 4 = 120
   \partial 4 d''4 -\lent (
   d2 b4 ~ |
   b2 a4 |
@@ -100,7 +102,9 @@ highVoice = \relative {
   d2 ) \shapeOne d'4 ( |
   d2 b4 ~ |
   b2 a4 |
+  \tempo 4 = 110
   b2 a4 |
+  \tempo 4 = 100
   b2 a4 |
   \forceHShift b2. _~ |
   b2 ) s4 |
@@ -264,20 +268,14 @@ musicSonBinocle = \score {
   }
 }
 
-\include "articulate.ly"
-
 midiSonBinocle = \book {
   \bookOutputName "son-binocle-music"
   \score {
     \keepWithTag #'played
-    \articulate <<
-      \new PianoStaff <<
-        \new Staff ="upper" \upper
-        \new Staff = "lower" \lower
-      >>
+    <<
+      \new Staff ="upper" << \upper \dynamicsHigh \dynamics >>
+      \new Staff = "lower" << \lower \dynamicsHigh \dynamics >>
     >>
-    \midi { 
-      \tempo 4 = 120
-    }
+    \midi {}
   }
 }

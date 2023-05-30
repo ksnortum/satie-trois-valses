@@ -88,7 +88,8 @@ sec = \markup { \italic "sec" }
 % -------------
 
 highVoice = \relative {
-  \tempo \pasVite
+  \set Score.tempoHideNote = ##t
+  \tempo \pasVite 4 = 144
   s4 <b d>8 ( <cs e> <ds fs>4 ) |
   s4 <b d?>8 ( <cs e> <ds fs>4 ) |
   s4 <a c?>8 ( <b d!> <cs e>4 ) |
@@ -121,7 +122,9 @@ highVoice = \relative {
   f!2. (
   a2. |
   f2. |
+  \tempo 4 = 130
   a2 ) r4 |
+  \tempo 4 = 144
   fs''4 c\rest fs!-> ~ ( |
   fs!8 e gs4. e8 |
   d4 ) b\rest d-> ~ ( |
@@ -404,19 +407,13 @@ musicSaTaille = \score {
   >>
 }
 
-\include "articulate.ly"
-
 midiSaTaille = \book {
   \bookOutputName "sa-taille-music"
   \score {
-    \articulate <<
-      \new PianoStaff <<
-        \new Staff ="upper" \upper
-        \new Staff = "lower" \lower
-      >>
+    <<
+      \new Staff ="upper" << \upper \dynamicsHigh \dynamics >>
+      \new Staff = "lower" << \lower \dynamicsHigh \dynamics >>
     >>
-    \midi { 
-      \tempo 4 = 144
-    }
+    \midi {}
   }
 }

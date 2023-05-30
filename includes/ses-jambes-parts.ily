@@ -397,16 +397,12 @@ musicSesJambes = \score {
   >>
 }
 
-\include "articulate.ly"
-
 midiSesJambes = \book {
   \bookOutputName "ses-jambes-music"
   \score {
-    \articulate <<
-      \new PianoStaff <<
-        \new Staff ="upper" \upper
-        \new Staff = "lower" \lower
-      >>
+    <<
+      \new Staff ="upper" << \upper \dynamicsHigh \dynamics >>
+      \new Staff = "lower" << \lower \dynamicsHigh \dynamics >>
     >>
     \midi { 
       \tempo 4 = 208
