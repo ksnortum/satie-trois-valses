@@ -30,7 +30,7 @@ markupSonBinocle = \markup {
 % -------------------
 
 forceHShift = \once \override NoteColumn.force-hshift = 0.25
-tweakPliez = \once \override TextScript.extra-offset = #'(0 . -4.25) 
+tweakPliez = \once \override TextScript.extra-offset = #'(0 . -4) 
 tweakP = \once \override DynamicText.extra-offset = #'(-1.5 . -6) 
 tweakPTwo = \once \override DynamicText.extra-offset = #'(-1 . -5)
 tweakPp = \once \override DynamicText.extra-offset = #'(0 . -5)

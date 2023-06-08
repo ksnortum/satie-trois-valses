@@ -17,6 +17,7 @@
 }
 
 \paper {
+  system-system-spacing.padding = #2
   top-margin = 8\mm                         %-minimum top-margin: 8mm
   top-markup-spacing.basic-distance = #5    %-dist. from bottom of top margin to the first markup/title
   markup-system-spacing.basic-distance = #6 %-dist. from header/title to first system
@@ -24,6 +25,8 @@
   last-bottom-spacing.basic-distance = #11  %-pads music from copyright block
   
   ragged-last-bottom = ##f
+  
+  #(set-paper-size "letter")
 }
 
 \layout { 
